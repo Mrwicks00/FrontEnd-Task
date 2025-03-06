@@ -74,6 +74,12 @@ body {
   font-size: 3em;
 }
 
+#p {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgb(240, 231, 231);
+}
+
 .second-child-div {
   padding: 20px;
   background-color: #ffffff;
@@ -148,4 +154,25 @@ body {
   margin-top: 20px;
   color: white;
   background-color: #303b59;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    display: block;
+    align-content: normal;
+  }
+  .parent-div {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+  }
+  .first-child-div {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+  }
+
+  #p {
+    font-size: 20px;
+    text-align: center;
+  }
 }
